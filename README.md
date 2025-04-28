@@ -91,7 +91,17 @@ For example: Is it a car? Where is it? How is it moving?
   * When to change lane
   * When to pass
 * Immediate
-  * 
+  * Accelerate or brake
+
+Planning Methods: 
+
+* **Reactive Planning(Rule Based Planning)**
+  * If there is a pedestrian on the road, stop.
+  * If speed limit changes, adjust speed to match it.
+
+* **Predictive Planning**
+  * That car has been stopped for the last 10 seconds. It is going to be stopped for the next few seconds.
+  * Pedestrian is jaywalking. She will enter our lane by the time we reach her so I need to slow down.
 
 
 # Glossary of Terms
