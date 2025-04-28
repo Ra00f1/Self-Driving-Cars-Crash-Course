@@ -62,7 +62,36 @@ Source: https://www.coursera.org/learn/intro-self-driving-cars?specialization=se
   * can handle emergencies if driver doesn't take control
 * Level 5: Level 4 + unlimited ODD
 
-### Requirements for Perception
+#### Perception
+**Perception**: can it see something and understand it.
+
+For example: Is it a car? Where is it? How is it moving?
+
+![image](https://github.com/user-attachments/assets/1bb3f756-4101-4f9d-afe3-68dca09264f5)
+
+#### Goals of Perception
+* Static Objects
+  * on-road: Road and lane markings, Construction signs
+  * off-road: Curbs, Traffic lights, Road signs
+* On-road Dynamic Objects
+  * Vehicles
+    * 4 wheelers
+    * 2 wheelers(harder to understand how they will move as hey have more freedom than 4 wheelers)
+  * Pedestraisn
+    * more erratic
+  * Ego Localization
+    * Position, Velocity, Acceleration, Orientaton, Angular motion
+    * GPS, IMU, odometry sensors are used to get the data needed
+   
+#### Planning
+![image](https://github.com/user-attachments/assets/098766c3-65a2-40cb-9d1e-26b62c960ac7)
+* Long Term
+  * The path to take from pont A to B
+* Short term
+  * When to change lane
+  * When to pass
+* Immediate
+  * 
 
 
 # Glossary of Terms
