@@ -163,7 +163,6 @@ Planning Methods:
   * FPGA
   * ASIC
 
-
 ## Sensor Configuration for Autonomous Vehicles
 ### Common Sensors
 * Camera – Appearance input
@@ -232,6 +231,12 @@ Planning Methods:
 * Forward and lateral coverage needs
 * Redundancy (in case of sensor failure)
 * Budget and hardware limitations
+
+# Day 2
+## Fully Convolutional Network
+<img src="https://github.com/user-attachments/assets/a15d2b5c-167c-433c-9cb8-3c06e5b54033" width="650"/>
+
+Image source: Chen, Peidong & Su, Xiuqin & Liu, Muyuan & Zhu, Wenhua. (2020). Lensless Computational Imaging Technology Using Deep Convolutional Network. Sensors. 20. 2661. 10.3390/s20092661. 
 
 
 # Glossary of Terms
