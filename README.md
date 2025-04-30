@@ -62,14 +62,14 @@ Source: https://www.coursera.org/learn/intro-self-driving-cars?specialization=se
   * can handle emergencies if driver doesn't take control
 * Level 5: Level 4 + unlimited ODD
 
-#### Perception
+## Perception
 **Perception**: can it see something and understand it.
 
 For example: Is it a car? Where is it? How is it moving?
 
 ![image](https://github.com/user-attachments/assets/1bb3f756-4101-4f9d-afe3-68dca09264f5)
 
-#### Goals of Perception
+### Goals of Perception
 * Static Objects
   * on-road: Road and lane markings, Construction signs
   * off-road: Curbs, Traffic lights, Road signs
@@ -83,8 +83,9 @@ For example: Is it a car? Where is it? How is it moving?
     * Position, Velocity, Acceleration, Orientaton, Angular motion
     * GPS, IMU, odometry sensors are used to get the data needed
    
-#### Planning
-![image](https://github.com/user-attachments/assets/098766c3-65a2-40cb-9d1e-26b62c960ac7)
+## Planning
+<img src="https://github.com/user-attachments/assets/098766c3-65a2-40cb-9d1e-26b62c960ac7" width="500"/>
+
 * Long Term
   * The path to take from pont A to B
 * Short term
@@ -102,6 +103,135 @@ Planning Methods:
 * **Predictive Planning**
   * That car has been stopped for the last 10 seconds. It is going to be stopped for the next few seconds.
   * Pedestrian is jaywalking. She will enter our lane by the time we reach her so I need to slow down.
+
+## Hardware 
+
+### **Sensors**
+<img src="https://github.com/user-attachments/assets/ce013be8-84e3-4313-a3c7-b59ece3713b0" width="800"/>
+
+
+* exteroceptive: extero = surroundings
+* proprioceptive: proprio = internal
+### Exteroceptive Sensors
+#### Cameras 
+* Metrics
+  * Resolution
+  * Field of view (FOV)
+  * Dynamic Range
+* Stereo cameras: image produced by focusing two cameras into the same angle/frame
+#### Lidar
+* Creates a 3D image by shooting light to the environment and absorb the reflected light.
+* Metrics
+  * Number of beams(common size is 64)
+  * Points per second(how many lpoints can absorb per second)
+  * Rotation rate(the higher the faster the upadte of the 3D image is)
+  * FOV
+* Solid state Lidars don't have rotation
+#### Radar
+* used for object detection
+* not affected by weather
+* Metrics
+  * Range
+  * FOV
+  * position & speed accuracy
+* types:
+  * Wide FOV, short range
+  * Narrow FOV, long range
+#### Sonar
+* used for parking and clsoe range
+
+### Proprioceptive Sensors
+ #### GNSS/IMPU/GPS
+ * Global Navigation Satellite Systems(GNSS)
+ * Inertial measurement units(IMU)
+ * measures of ego vehicle states
+ * GNSS:
+   * Position
+   * Velocity
+  
+ * IMU:
+   * Angular rotation
+   * Acceleration
+   * Heading(IMU + GPS)
+#### Wheel Odometry
+* Tracks wheel rotation
+* Estimates the speed and Orientation of the vehicle
+
+## Computing Hardware 
+* Most used hardware:
+  * GPU
+  * FPGA
+  * ASIC
+
+
+## Sensor Configuration for Autonomous Vehicles
+### Common Sensors
+* Camera – Appearance input
+* Stereo Camera – Depth perception
+* LIDAR – All-weather 3D sensing
+* Radar – Object detection
+* Ultrasonic – Short-range 3D detection (e.g., parking)
+* GNSS/IMU/Wheel Odometry – Ego state estimation
+
+### Deceleration and Stopping Distance
+#### Braking Dynamics
+* Aggressive deceleration: 5 m/s² (emergency)
+
+* Normal deceleration: 2 m/s² (comfortable)
+
+* Formula: d= v^2 / 2a
+  * d = stopping distance (how far the vehicle travels before coming to a complete stop)
+  * v = initial velocity of the vehicle (in meters per second, m/s)
+  * a = deceleration (rate of slowing down, in meters per second squared, m/s²)
+ 
+#### Highway Driving – Sensor Coverage
+**Key Maneuvers**
+* Emergency braking
+* Maintaining speed
+* Lane changing
+
+**Sensor Requirements**
+* Forward sensing:
+  * Emergency stop: 110–200 m
+  * Following vehicles: 65–100 m
+* Lateral sensing:
+  * Adjacent lanes: ~3.7 m each
+  * Field of view: 160°–180°
+  * Range: 40–60 m
+* Rear and side awareness:
+  * Required for lane changes and merges
+  * 360° situational awareness for safety
+
+#### Urban Driving – Sensor Coverage
+**Additional Maneuvers**
+* Overtake parked vehicle
+* Intersection navigation (left/right turns)
+* Roundabout navigation
+
+**Sensor Requirements**
+* Overtaking:
+  * Parked car: short-range wide FoV
+  * Oncoming traffic: narrow long-range
+* Intersections:
+  * Omni-directional detection (vehicles + pedestrians)
+* Roundabouts:
+  * Short-range, wide-angle longitudinal and lateral sensing
+
+#### General Sensor Strategy
+**Design Principles**
+* Long-range, narrow FoV:
+  * Detect distant longitudinal hazards
+* Short/medium-range, wide FoV:
+  * 360° coverage within ~50 m
+* Ultrasonic/Sonar:
+  * Useful for very close range (e.g., parking)
+
+#### Design Considerations
+* Sensor setup should be based on:
+* Required maneuvers (ODD-specific)
+* Forward and lateral coverage needs
+* Redundancy (in case of sensor failure)
+* Budget and hardware limitations
 
 
 # Glossary of Terms
