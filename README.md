@@ -232,6 +232,36 @@ Planning Methods:
 * Redundancy (in case of sensor failure)
 * Budget and hardware limitations
 
+## Software
+Softwares architecture:
+* Environment Perception
+* Environment Mapping
+* Motion Planning
+* Controller
+* System Supervisor
+
+<img src="https://github.com/user-attachments/assets/b5029f8b-0ed7-4cbc-a632-b501f4d985ae" width="650"/>
+
+Image source: https://fisher.wharton.upenn.edu/wp-content/uploads/2020/09/Thesis_Nova-Qiaochu-Guo.pdf
+
+Localization/Environment Mapping:
+* Occupancy Grid Map
+
+<img src="https://github.com/user-attachments/assets/4bcf4c98-a932-4dbe-b32b-c679fceff802" width="400"/>
+
+* Localization Map
+
+<img src="https://github.com/user-attachments/assets/da0bc474-ec0c-472d-9ec3-db96cf76c897" width="400"/>
+
+* Detailed Road Map
+
+<img src="https://github.com/user-attachments/assets/4d9a9000-ceed-42ce-b37a-45c5d55e4bdf" width="400"/>
+
+Planning:
+
+<img src="https://github.com/user-attachments/assets/db984273-f32a-4a0e-a5d0-446c54ad733e" width="600"/>
+
+
 # Day 2
 ## Fully Convolutional Network
 <img src="https://github.com/user-attachments/assets/a15d2b5c-167c-433c-9cb8-3c06e5b54033" width="650"/>
