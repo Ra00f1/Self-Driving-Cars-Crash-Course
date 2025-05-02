@@ -250,6 +250,8 @@ Localization/Environment Mapping:
 <img src="https://github.com/user-attachments/assets/4bcf4c98-a932-4dbe-b32b-c679fceff802" width="400"/>
 
 * Localization Map
+  * Data collected through LIDAR
+  * difference between the LIDAR data gices the movement of the vehicle
 
 <img src="https://github.com/user-attachments/assets/da0bc474-ec0c-472d-9ec3-db96cf76c897" width="400"/>
 
@@ -263,6 +265,8 @@ Planning:
 
 
 # Day 2
+
+Source: https://www.youtube.com/watch?v=cPOtULagNnI
 ## Fully Convolutional Network
 <img src="https://github.com/user-attachments/assets/a15d2b5c-167c-433c-9cb8-3c06e5b54033" width="650"/>
 
