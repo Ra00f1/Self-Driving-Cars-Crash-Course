@@ -1,4 +1,4 @@
-# Self-Driving Cars Crash Course(6 Days)
+# Self-Driving Cars Crash Course
 
 ## Introduction 
 ### What Are Self-Driving Cars?
